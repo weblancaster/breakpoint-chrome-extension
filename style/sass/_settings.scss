@@ -1,0 +1,6 @@
+// Normalise CSS
+@import "normalise";
+
+// CSS 3 support 
+@import "compass/css3";
+$experimental-support-for-svg: true;

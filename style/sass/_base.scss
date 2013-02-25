@@ -1,0 +1,28 @@
+// Base
+::selection{ background-color: #fff2a8; color: #000; }
+::moz-selection{ background-color: #fff2a8; color: #000; }
+::webkit-selection{ background-color: #fff2a8; color: #000; }
+
+* {
+	@include box-sizing(border-box);
+}
+
+html {
+	background: #fff;
+	-webkit-font-smoothing: antialiased;
+	font-size: 16px;
+	font-family: helvetica, sans-serif, arial;
+}
+
+body {
+	height: 150px;
+	padding: 20px;
+}
+
+a {
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}

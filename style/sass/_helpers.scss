@@ -1,0 +1,41 @@
+/*------------------------------------*\
+    / Check the repositorie for new updates
+    / https://github.com/weblancaster/CSS-helpers
+\*------------------------------------*/
+.fl { float: left; }
+.fr { float: right; }
+.fn { float: none; }
+
+.caps { text-transform: uppercase; }
+
+.ir {
+	display: block;
+	text-indent: -99999px;
+}
+
+.txtl { text-align: left; }
+.txtr { text-align: right; }
+.txtj { text-align: justify; }
+.txtc { text-align: center; }
+
+.dn { display: none; }
+.db { display: block; }
+.di { display: inline; }
+.dib { display: inline-block; }
+
+.clearb { clear: both; }
+.cfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.nmg { margin: 0; }
+.npd { padding: 0; }
+.nmp { 	margin:0; padding:0; }
+.mg-auto { margin: 0 auto; }
+
+.bdn { border: none; }
+
+.fwb { font-weight: bold; }
+.fwn { font-weight: normal; }
