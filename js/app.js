@@ -1,10 +1,1 @@
-//app js
-
-function windowResize() {
-	
-}
-
-//ready
-$(function() {
-	windowResize();
-});
+chrome.tabs.executeScript(null, {file: "app-inject.js"});

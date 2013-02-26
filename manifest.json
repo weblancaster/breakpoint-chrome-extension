@@ -5,7 +5,7 @@
 	"description": "Helps designers and developers to add/export media-queries to their Responsive Design projects.",
 
 	"permissions": [
-		"tabs"
+		"http://*/"
 	],
 	
 	// Note: Because of bug 134315, you must declare any images you
