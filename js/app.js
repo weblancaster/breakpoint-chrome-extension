@@ -1,1 +1,0 @@
-chrome.tabs.executeScript(null, {file: "app-inject.js"});
