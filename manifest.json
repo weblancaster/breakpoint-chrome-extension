@@ -2,8 +2,8 @@
 	"manifest_version": 2,
 
 	"name": "Breakpoint media-queries",
-	"version": "0.4",
-	"description": "Generate media-queries to your responsive projects and show screen size width.",
+	"version": "0.5",
+	"description": "Generate media-queries, show screen size width width and link to a list of media device width snippets ",
 
 	"permissions": [
 		"http://*/*",

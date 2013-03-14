@@ -1,6 +1,6 @@
 http_path = "/"
-css_dir = "."
-sass_dir = "."
+css_dir = "style"
+sass_dir = "style/sass"
 images_dir = "img"
 javascripts_dir = "js"
 output_style = :compressed
