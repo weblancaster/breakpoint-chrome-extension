@@ -9,7 +9,7 @@ function init() {
 
 		chrome.windows.getCurrent(function(w) {
 			var w = w.width,
-				html = '@media all and (max-width: '+ w +') { /* your content here */ }';
+				html = '@media all and (max-width: '+ w +'px) { /* your content here */ }';
 			
 			elCurrent.text(w + 'px');
 			htmlResult.text(html);
