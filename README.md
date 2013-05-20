@@ -1,6 +1,6 @@
 # Breakpoint Chrome Extension
 
-Description: (Project under development) Chrome extension to help designers and developers to generate media-queries to their Responsive Design projects.
+Description: Chrome extension help designers and developers to generate media-queries to their Responsive Design projects.
 
 ## History
 
