@@ -1,5 +1,5 @@
 (function() {
-	window.App = App || {};
+	window.App = {};
 
 	App.Init = (function() {
 
@@ -15,7 +15,6 @@
 					elCurrent = document.getElementById('current');
 
 				btMedia.addEventListener('click', function() {
-					console.log('interaction');
 					chrome.windows.getCurrent(function(w) {
 						var w = w.width,
 							html = '@media all and (max-width: '+ w +'px) { /* your content here */ }';
