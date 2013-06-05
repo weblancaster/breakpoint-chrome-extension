@@ -1,23 +1,33 @@
-//app-injected
-function init() {
-	var btMedia = $('#export-media'),
-		htmlResult = $('#html-result'),
-		elCurrent = $('#current-resolution').find('strong');
+(function() {
+	window.App = App || {};
 
-	btMedia.on('click', function(e) {
-		e.preventDefault();
+	App.Init = (function() {
 
-		chrome.windows.getCurrent(function(w) {
-			var w = w.width,
-				html = '@media all and (max-width: '+ w +'px) { /* your content here */ }';
-			
-			elCurrent.text(w + 'px');
-			htmlResult.text(html);
-		});
+		return {
+			initialize: function() {
+				this.addEvent();
+			},
 
-	});
-}
+			addEvent: function() {
+				var btMedia = document.getElementById('export-media'),
+					htmlResult = document.getElementById('html-result'),
+					el = document.getElementById('current-resolution'),
+					elCurrent = document.getElementById('current');
 
-$(function() {
-	init();
-});
+				btMedia.addEventListener('click', function() {
+					console.log('interaction');
+					chrome.windows.getCurrent(function(w) {
+						var w = w.width,
+							html = '@media all and (max-width: '+ w +'px) { /* your content here */ }';
+						
+						elCurrent.innerHTML = (w + 'px');
+						htmlResult.innerHTML = html;
+					});
+				}, false);
+			}
+		}
+	})();
+
+	App.Init.initialize();
+
+})();
