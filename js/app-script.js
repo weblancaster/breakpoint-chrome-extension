@@ -9,8 +9,7 @@
 			},
 
 			addEvent: function() {
-				var btMedia = document.getElementById('export-media'),
-					htmlResult = document.getElementById('html-result'),
+				var htmlResult = document.getElementById('html-result'),
 					el = document.getElementById('current-resolution'),
 					elCurrent = document.getElementById('current');
 
