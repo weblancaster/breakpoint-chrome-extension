@@ -14,15 +14,15 @@
 					el = document.getElementById('current-resolution'),
 					elCurrent = document.getElementById('current');
 
-				btMedia.addEventListener('click', function() {
-					chrome.windows.getCurrent(function(w) {
-						var w = w.width,
+				chrome.tabs.getSelected(null, function(tab) {
+					chrome.tabs.sendMessage(tab.id, { action: 'get window.innerWidth' }, function(response) {
+						var w = response.innerWidth,
 							html = '@media all and (max-width: '+ w +'px) { /* your content here */ }';
-						
+
 						elCurrent.innerHTML = (w + 'px');
 						htmlResult.innerHTML = html;
-					});
-				}, false);
+			        });
+				});
 			}
 		}
 	})();
